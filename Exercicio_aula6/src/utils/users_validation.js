@@ -5,13 +5,19 @@ const create = {
         },
         type: 'string',
     },
-    email: {
+    forca: {
         presence: {
             allowEmpty: false,
         },
         type: 'string',
     },
-    senha: {
+    poder: {
+        presence: {
+            allowEmpty: false,
+        },
+        type: 'string',
+    },
+    origem: {
         presence: {
             allowEmpty: false,
         },
@@ -20,13 +26,25 @@ const create = {
 };
 
 const update = {
-    nome: {
+     nome: {
         presence: {
             allowEmpty: false,
         },
         type: 'string',
     },
-    email: {
+    forca: {
+        presence: {
+            allowEmpty: false,
+        },
+        type: 'string',
+    },
+    poder: {
+        presence: {
+            allowEmpty: false,
+        },
+        type: 'string',
+    },
+    origem: {
         presence: {
             allowEmpty: false,
         },
@@ -35,7 +53,25 @@ const update = {
 };
 
 const get = {
-    email: {
+    nome: {
+        presence: {
+            allowEmpty: false,
+        },
+        type: 'string',
+    },
+    forca: {
+        presence: {
+            allowEmpty: false,
+        },
+        type: 'string',
+    },
+    poder: {
+        presence: {
+            allowEmpty: false,
+        },
+        type: 'string',
+    },
+    origem: {
         presence: {
             allowEmpty: false,
         },
@@ -44,7 +80,25 @@ const get = {
 };
 
 const deleteBy = {
-    email: {
+    nome: {
+        presence: {
+            allowEmpty: false,
+        },
+        type: 'string',
+    },
+    forca: {
+        presence: {
+            allowEmpty: false,
+        },
+        type: 'string',
+    },
+    poder: {
+        presence: {
+            allowEmpty: false,
+        },
+        type: 'string',
+    },
+    origem: {
         presence: {
             allowEmpty: false,
         },
