@@ -17,7 +17,7 @@ const UsersRepository = {
                 nome: data.nome,
             };
             const options = { new: true };
-            const filter = { email: data.email };
+            const filter = { forca: data.forca };
             const result = await UsersModel.findOneAndUpdate(filter, update, options).exec();
             if (result === null) return []
             return result.toObject();
@@ -28,7 +28,7 @@ const UsersRepository = {
 
     async delete(data) {
         try {
-            const result = await UsersModel.deleteOne({ email: data.email }).exec();
+            const result = await UsersModel.deleteOne({ poder: data.poder }).exec();
             return result.deletedCount;
         } catch (error) {
             return error;
@@ -44,9 +44,9 @@ const UsersRepository = {
         }
     },
 
-    async getByEmail(data) {
+    async getByOrigem(data) {
         try {
-          const result = await UsersModel.findOne({ email: data.email }).exec();
+          const result = await UsersModel.findOne({ origem: data.origem }).exec();
           return result;
         } catch (e) {
           return e;

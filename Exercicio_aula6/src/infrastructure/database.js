@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const uri = `mongodb+srv://user:user@labc214.ajb6f.mongodb.net/myFirstDatabase?`;
+const uri = `mongodb+srv://root:root@cluster0.30fhd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 
 mongoose.connect(uri, {
     useNewUrlParser: true,
@@ -14,13 +14,11 @@ const UsersSchema = new Schema({
         type: String,
         index: true,
         unique: true,
-    },
-    email: {
-        type: String,
-        unique: true,
-    },
+    },    
     nome: String,
-    senha: String,
+    forca: String,
+    poder: String,
+    origem: String
 });
 
 const UsersModel = mongoose.model('UsersModel', UsersSchema);
