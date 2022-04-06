@@ -14,9 +14,7 @@
 
 
 <head>
-
-<title>Passos para realização do exercício</title>
-
+    Passos para realização do exercício
 </head>
 
 <body>
@@ -29,7 +27,7 @@
         <li> npm install--save uuid </li>
     <h1 style="color:#00008b">Alterações feitas: </h1>
         <h2> Classe users_validation.js: </h2> 
-            <li> Foram adicionados os campoes de nome, força, poder e origem em cada comando para validação dos dados </li> 
+            <li> Foram adicionados os campos de nome, força, poder e origem em cada comando para validação dos dados </li> 
         <h2> Classe users_repository.js </h2>
             <li> Foram alteradas as funções de update, delete, getByOrigem </li>
                     <p> Em update, é necessário inserir todos os campos de validação para atualizar o nome do super-herói </p>
@@ -48,4 +46,26 @@
                 <p> Mudamos a requisição para "get", inserimos os campos de validação com a origem para buscarmos um super-herói</p>
             <li> Em http://localhost:5000/users/list: </li>
                 <p> Mudamos a requisição para "get", inserimos os campos de validação para listar os super-heróis</p>                                               
+</body>
+
+## :computer: - Exercicio aula 07
+### Este exercício foi realizado com o intuito de fazer teste unitários utilizando a linguagem JavaScript (jest). 
+
+<head>
+    Passos para realização do exercício
+</head>
+
+<body>
+    <h1 style="color:#00008b">Foram instaladas as seguintes dependências: </h1>
+        <li> npm install --save jest </li>        
+    <h1 style="color:#00008b">Alterações feitas: </h1>
+        <h2> Classe package.json: </h2> 
+            <li> Foi adicionado o campo ""test": "jest --coverage"" para que o node entenda que deve utilizar o framework jest para realizar os testes </li> 
+        <h2> Foi criado o pacote "tests" </h2>
+            <li> Foram criadas as classes (delete.test, response_status.test, validation.test).js </li>
+                    <p> Em delete.test, é necessário inserir todos os campos de teste para deletar o super-herói </p>
+                    <p> Em response_status.test, é necessário inserir todos os campos de teste para verificar as respostas das requisições super-herói </p>
+                    <p> Em validation.test, é necessário inserir todos os campos de teste para verificar a validação dos dados do super-herói </p>
+        <h2> Foram criadas as classes delete.js e validation.js </h2>
+            <li> Separamos as funcionalidades de delete e validation em duas classes para conseguirmos testar de forma independente os testes </li>                               
 </body>
