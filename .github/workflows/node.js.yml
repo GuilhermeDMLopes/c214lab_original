@@ -5,9 +5,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ exercicioTestesUnitarios ]
+    branches: [ main ]
   pull_request:
-    branches: [ exercicioTestesUnitarios ]
+    branches: [ main ]
 
 jobs:
   build:
